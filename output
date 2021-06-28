@@ -1,0 +1,287 @@
+
+-----------------------< com.mycompany:Tadawul2 >-----------------------
+Building Tadawul2 1.0-SNAPSHOT
+--------------------------------[ jar ]---------------------------------
+
+--- exec-maven-plugin:3.0.0:exec (default-cli) @ Tadawul2 ---
+CSV file is written
+CSV file is converted to ARFF file
+instances.classIndex(): 2425
+number of Classes 2
+number of Instances(): 260
+number of Attributes(): 2426
+
+========================================
+With all of the attributes (Without attributes selection :
+========================================
+instances.classIndex(): 2425
+number of Classes 2
+number of Attributes(): 2426
+trainingSplits: 260
+
+Results of J48
+======
+
+Correctly Classified Instances         175               67.3077 %
+Incorrectly Classified Instances        85               32.6923 %
+Kappa statistic                          0.2943
+Mean absolute error                      0.3645
+Root mean squared error                  0.5314
+Relative absolute error                 74.942  %
+Root relative squared error            107.5735 %
+Total Number of Instances              260     
+
+MatrixString of J48: === Confusion Matrix ===
+
+   a   b   <-- classified as
+ 126  27 |   a = 0
+  58  49 |   b = 1
+
+----------------
+----------------
+Accuracy of J48: 67.31%
+----------------
+Recall of J48: 45.79%
+----------------
+Precision of J48: 64.47%
+----------------
+fMeasure of J48: 53.55%
+----------------
+
+Results of SMO
+======
+
+Correctly Classified Instances         205               78.8462 %
+Incorrectly Classified Instances        55               21.1538 %
+Kappa statistic                          0.5614
+Mean absolute error                      0.2115
+Root mean squared error                  0.4599
+Relative absolute error                 43.4974 %
+Root relative squared error             93.1042 %
+Total Number of Instances              260     
+
+MatrixString of SMO: === Confusion Matrix ===
+
+   a   b   <-- classified as
+ 127  26 |   a = 0
+  29  78 |   b = 1
+
+----------------
+----------------
+Accuracy of SMO: 78.85%
+----------------
+Recall of SMO: 72.90%
+----------------
+Precision of SMO: 75.00%
+----------------
+fMeasure of SMO: 73.93%
+----------------
+
+========================================
+select attribute 2000 using IDF :
+========================================
+number of Classes 2
+number of Attributes(): 2001
+trainingSplits: 260
+
+Results of J48
+======
+
+Correctly Classified Instances         172               66.1538 %
+Incorrectly Classified Instances        88               33.8462 %
+Kappa statistic                          0.2552
+Mean absolute error                      0.3865
+Root mean squared error                  0.5237
+Relative absolute error                 79.4707 %
+Root relative squared error            106.0195 %
+Total Number of Instances              260     
+
+MatrixString of J48: === Confusion Matrix ===
+
+   a   b   <-- classified as
+ 131  22 |   a = 0
+  66  41 |   b = 1
+
+----------------
+----------------
+Accuracy of J48: 66.15%
+----------------
+Recall of J48: 38.32%
+----------------
+Precision of J48: 65.08%
+----------------
+fMeasure of J48: 48.24%
+----------------
+
+Results of SMO
+======
+
+Correctly Classified Instances         214               82.3077 %
+Incorrectly Classified Instances        46               17.6923 %
+Kappa statistic                          0.6408
+Mean absolute error                      0.1769
+Root mean squared error                  0.4206
+Relative absolute error                 36.3796 %
+Root relative squared error             85.1465 %
+Total Number of Instances              260     
+
+MatrixString of SMO: === Confusion Matrix ===
+
+   a   b   <-- classified as
+ 124  29 |   a = 0
+  17  90 |   b = 1
+
+----------------
+----------------
+Accuracy of SMO: 82.31%
+----------------
+Recall of SMO: 84.11%
+----------------
+Precision of SMO: 75.63%
+----------------
+fMeasure of SMO: 79.65%
+----------------
+
+
+========================================
+select attribute 50 using IG :
+========================================
+reduced classIndex: 50
+reduced numAttributes: 51
+instances.classIndex(): 2425
+number of Classes 2
+number of Attributes(): 51
+trainingSplits: 260
+
+Results of J48
+======
+
+Correctly Classified Instances         187               71.9231 %
+Incorrectly Classified Instances        73               28.0769 %
+Kappa statistic                          0.3939
+Mean absolute error                      0.3472
+Root mean squared error                  0.4519
+Relative absolute error                 71.3841 %
+Root relative squared error             91.4773 %
+Total Number of Instances              260     
+
+MatrixString of J48: === Confusion Matrix ===
+
+   a   b   <-- classified as
+ 132  21 |   a = 0
+  52  55 |   b = 1
+
+----------------
+----------------
+Accuracy of J48: 71.92%
+----------------
+Recall of J48: 51.40%
+----------------
+Precision of J48: 72.37%
+----------------
+fMeasure of J48: 60.11%
+----------------
+
+Results of SMO
+======
+
+Correctly Classified Instances         207               79.6154 %
+Incorrectly Classified Instances        53               20.3846 %
+Kappa statistic                          0.5737
+Mean absolute error                      0.2038
+Root mean squared error                  0.4515
+Relative absolute error                 41.9156 %
+Root relative squared error             91.3957 %
+Total Number of Instances              260     
+
+MatrixString of SMO: === Confusion Matrix ===
+
+   a   b   <-- classified as
+ 131  22 |   a = 0
+  31  76 |   b = 1
+
+----------------
+----------------
+Accuracy of SMO: 79.62%
+----------------
+Recall of SMO: 71.03%
+----------------
+Precision of SMO: 77.55%
+----------------
+fMeasure of SMO: 74.15%
+----------------
+
+
+========================================
+select attribute 2000 using IDF then select 50 IG :
+========================================
+reduced classIndex: 50
+reduced numAttributes: 51
+instances.classIndex(): 2425
+number of Classes 2
+number of Attributes(): 51
+trainingSplits: 260
+
+Results of J48
+======
+
+Correctly Classified Instances         197               75.7692 %
+Incorrectly Classified Instances        63               24.2308 %
+Kappa statistic                          0.4627
+Mean absolute error                      0.3426
+Root mean squared error                  0.4329
+Relative absolute error                 70.4443 %
+Root relative squared error             87.6392 %
+Total Number of Instances              260     
+
+MatrixString of J48: === Confusion Matrix ===
+
+   a   b   <-- classified as
+ 146   7 |   a = 0
+  56  51 |   b = 1
+
+----------------
+----------------
+Accuracy of J48: 75.77%
+----------------
+Recall of J48: 47.66%
+----------------
+Precision of J48: 87.93%
+----------------
+fMeasure of J48: 61.82%
+----------------
+
+Results of SMO
+======
+
+Correctly Classified Instances         207               79.6154 %
+Incorrectly Classified Instances        53               20.3846 %
+Kappa statistic                          0.5547
+Mean absolute error                      0.2038
+Root mean squared error                  0.4515
+Relative absolute error                 41.9156 %
+Root relative squared error             91.3957 %
+Total Number of Instances              260     
+
+MatrixString of SMO: === Confusion Matrix ===
+
+   a   b   <-- classified as
+ 146   7 |   a = 0
+  46  61 |   b = 1
+
+----------------
+----------------
+Accuracy of SMO: 79.62%
+----------------
+Recall of SMO: 57.01%
+----------------
+Precision of SMO: 89.71%
+----------------
+fMeasure of SMO: 69.71%
+----------------
+------------------------------------------------------------------------
+BUILD SUCCESS
+------------------------------------------------------------------------
+Total time:  24:18 min
+Finished at: 2021-04-09T05:33:09+03:00
+------------------------------------------------------------------------
